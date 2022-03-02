@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<p> Game đoán số <br><br>
+    <button onclick="Play()">begin</button>
+<!--    <button onclick="Again()">Play Again</button>-->
+</p>
+<body>
+<script>
+    function Play() {
+
+    let limit = prompt('Enter with điểm giới hạn')
+    let input = prompt('Enter with số dự đoán')
+    let Sorandom;
+    if (limit) {
+        Sorandom = Math.floor(Math.random() * limit)
+        if (input == Sorandom) {
+            alert("Bạn đã đoán đúng số")
+        } else {
+            while (input != Sorandom) {
+                alert('Bạn đã đoán sai số, số đúng là ' +Sorandom);
+                input = prompt('Enter with số dự đoán')
+            }
+            alert('Bạn đã đoán đúng')
+        }
+    }
+    }
+
+</script>
+
+</body>
+</html>

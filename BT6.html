@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6: Tính tổng của 30 số chia hết cho 7 đầu tiên trong các số tự nhiên.</title>
+</head>
+<body>
+<script>
+    let count = 0, sum =0
+    let serinumber =""
+    for (let i=1; ; i++){
+        if(i%7==0){
+            serinumber += i+" "
+            // console.log(dayso)
+            sum += i
+            count++
+            if(count==30) break
+        }
+    }
+    document.write(serinumber +"<br>")
+    document.write("Tổng bằng "+sum)
+
+</script>
+
+</body>
+</html>
